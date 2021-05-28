@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Louis George Cafe';
+  src: url('./assets/louis-george-cafe-light.woff') format('woff'),
+       url('./assets/louis-george-cafe-light.woff') format('truetype');
+  font-weight: light;
+}
+
+body {
+  font-family: 'Louis George Cafe';
+  letter-spacing: 0.5em;
+}
+
+h1 {
+  letter-spacing: 0.5em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin: 25px;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+img#storefront {
+  width: 100%;
+  max-width: 500px;
+}
+
+section#info {
+  margin: 20px 50px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img.social-icon {
+  height: 28px;
+  color: blue;
+  margin: 0px 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+table tr.blank-row {
+  height: 20px;
+}
+
+table th {
+  text-align: left;
+}
+
+table#menu {
+  margin: 0 auto 100px auto;
+  text-transform: uppercase;
+}
+
+table#menu tr td{
+  vertical-align: top;
+  padding-bottom: 0.4em;
+}
+
+table#menu tr td h6{
+  margin: 0.3em;
+}
+
+
+@media only screen and (max-width: 767px) {
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+}
