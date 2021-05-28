@@ -8,6 +8,7 @@
 body {
   font-family: 'Louis George Cafe';
   letter-spacing: 0.5em;
+  line-height: 1.6;
 }
 
 h1 {
@@ -29,8 +30,15 @@ nav {
 
 article {
   display: flex;
-  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 0 auto;
 }
 
 img#storefront {
@@ -39,10 +47,13 @@ img#storefront {
 }
 
 section#info {
-  margin: 20px 50px 20px 50px;
+  padding: 20px 50px 20px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  word-break: break-word;
 }
 
 img.social-icon {
@@ -79,7 +90,36 @@ table#menu tr td h6{
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
+
+  body {
+    margin: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p, table {
+    font-size: 12px;
+  }
+
+  nav {
+    margin: 0px;
+  }
+
+  section {
+    margin: initial;
+  }
+
+  section#info {
+    padding: 0;
+  }
+
+  img#logo {
+    max-width: 100px;
+  }
+
   article {
     display: flex;
     flex-direction: column;
