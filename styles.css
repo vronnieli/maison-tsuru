@@ -15,6 +15,12 @@ h1 {
   letter-spacing: 0.5em;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -24,8 +30,24 @@ header {
 
 nav {
   display: flex;
+  letter-spacing: 0;
   align-items: center;
   margin: 25px;
+}
+
+img.social-icon {
+  height: 28px;
+  color: blue;
+  margin: 0px 5px;
+}
+
+nav div#nav-links {
+  margin-left: 10px;
+}
+
+nav a.nav-link {
+  letter-spacing: 0.5em;
+  margin: 0 5px;
 }
 
 article {
@@ -56,15 +78,8 @@ section#info {
   word-break: break-word;
 }
 
-img.social-icon {
-  height: 28px;
-  color: blue;
-  margin: 0px 5px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
+section#info col.first-column {
+  width: 150px;
 }
 
 table tr.blank-row {
@@ -78,6 +93,7 @@ table th {
 table#menu {
   margin: 0 auto 100px auto;
   text-transform: uppercase;
+  min-width: 640px;
 }
 
 table#menu tr td{
@@ -85,7 +101,7 @@ table#menu tr td{
   padding-bottom: 0.4em;
 }
 
-table#menu tr td h6{
+tr td h6{
   margin: 0.3em;
 }
 
@@ -100,12 +116,28 @@ table#menu tr td h6{
     font-size: 24px;
   }
 
-  p, table {
+  p, a, table {
     font-size: 12px;
   }
 
   nav {
+    justify-content: space-between;
     margin: 0px;
+  }
+
+  nav div#nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img#logo {
+    max-width: 100px;
   }
 
   section {
@@ -116,12 +148,12 @@ table#menu tr td h6{
     padding: 0;
   }
 
-  img#logo {
-    max-width: 100px;
+  section#info col.first-column {
+    width: 125px;
   }
 
-  article {
-    display: flex;
-    flex-direction: column;
+  table#menu {
+    margin: 0 auto 60px auto;
+    min-width: auto;
   }
 }
